@@ -19,3 +19,5 @@ SELECT name, platform, year, genre, publisher, jp_sales FROM game JOIN platform 
 5. Copy paste je gemaakte SQL query hieronder
    
 SELECT name, genre, publisher, platform, year FROM game JOIN platform ON platform.id = game.platform_id JOIN genre ON genre.id = game.genre_id JOIN publisher ON publisher.id = game.publisher_id WHERE platform = 'PC'
+
+SELECT I.name FROM inhabitant, village WHERE village.villageid = inhabitant.villageid AND village.name = 'Onionville' OR gender = 'f'
